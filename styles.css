@@ -1,0 +1,22 @@
+body {
+    font-family: sans-serif;
+    color: lightgray;
+    background-color: darkslategray;
+}
+
+h1 {
+    font-family: monospace;
+    color: beige;
+    text-align: center;
+}
+
+a {
+    color: skyblue;
+}
+
+div {
+    margin: auto;
+    max-width: 600px;
+    border: 5px solid beige;
+    padding: 10px;
+}
