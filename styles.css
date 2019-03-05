@@ -4,19 +4,59 @@ body {
     background-color: darkslategray;
 }
 
-h1 {
-    font-family: monospace;
-    color: beige;
-    text-align: center;
-}
-
 a {
     color: skyblue;
 }
 
-div {
-    margin: auto;
+article, header {
+    margin: 0 auto 10px auto;
     max-width: 600px;
-    border: 5px solid beige;
     padding: 10px;
+    border: 5px solid beige;
+}
+
+nav {
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+nav img {
+    height: 100%;
+    vertical-align: middle;
+}
+
+nav span {
+    height: 100%;
+    display: inline-block;
+}
+
+nav a {
+    color: beige;
+    font-size: 1.3em;
+    text-decoration: none;
+    height: 100%;
+}
+
+nav a span:hover {
+    color: darkslategray;
+    background-color: beige;
+    font-weight: bold;
+}
+
+h1,h2,h3 {
+    font-family: monospace;
+}
+
+h1 {
+    margin: 0;
+    color: beige;
+    font-size: 2em;
+}
+
+#about img {
+    float: right;
+    width: 30%;
+    margin-top: -60px;
 }
