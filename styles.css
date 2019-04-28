@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: monospace;
     color: lightgray;
     background-color: darkslategray;
 }
@@ -11,25 +11,21 @@ a {
 article, header {
     margin: 0 auto 10px auto;
     max-width: 600px;
+    min-width: 300px;
     padding: 10px;
-    border: 5px solid beige;
+    border: 3px solid beige;
 }
 
 nav {
     height: 30px;
-    text-align: center;
     vertical-align: middle;
     line-height: 30px;
+    text-align: center;
 }
 
 nav img {
     height: 100%;
     vertical-align: middle;
-}
-
-nav span {
-    height: 100%;
-    display: inline-block;
 }
 
 nav a {
@@ -39,10 +35,26 @@ nav a {
     height: 100%;
 }
 
-nav a span:hover {
-    color: darkslategray;
-    background-color: beige;
-    font-weight: bold;
+@media screen and (min-width: 400px) {
+    h1 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-link {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
+nav a:hover {
+    color: skyblue;
 }
 
 h1,h2,h3 {
@@ -52,11 +64,18 @@ h1,h2,h3 {
 h1 {
     margin: 0;
     color: beige;
-    font-size: 2em;
+    display: inline-block;
+}
+
+h2 {
+    display: inline-block;
+}
+
+#clear-me {
+    clear: both;
 }
 
 #about img {
     float: right;
     width: 30%;
-    margin-top: -60px;
 }
