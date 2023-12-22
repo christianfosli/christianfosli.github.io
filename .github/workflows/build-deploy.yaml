@@ -29,8 +29,8 @@ jobs:
           submodules: true
       - name: Build
         run: |
-          image=$(docker build .)
-          container=$(docker create $image)
+          docker build -t christianfosli-site .
+          container=$(docker create christianfosli-site)
           docker cp $container:public out
       - name: Setup Pages
         uses: actions/configure-pages@v4
