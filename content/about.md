@@ -15,3 +15,9 @@ I'm a husband and a dad to an amazing toddler.
 
 On this website I will mostly post about technology, usually in English but sometimes in Norwegian.
 I also highlight some of my favorite hobby projects from my GitHub.
+
+---
+
+<sub><sup>My personal website is built using a static site generator called [zola](https://www.getzola.org/) (similar to Hugo),
+and deployed to/hosted on [GitHub pages](https://pages.github.com/).
+The source code is available [on GitHub](https://github.com/christianfosli/christianfosli.github.io).<sub><sup>
