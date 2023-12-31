@@ -3,6 +3,8 @@ title = "About Christian Fosli"
 path = "about"
 +++
 
+![Christian Fosli profile](/me-2023-09.png)
+
 I'm a senior software engineer from Stavanger, Norway.
 My main areas of expertise are backend dotnet development, infrastructure-as-code,
 and configuring CI/CD pipelines using GitHub Actions or Azure (DevOps) Pipelines.

@@ -30,5 +30,9 @@ socials = [
     { name = "stack-overflow", url = "https://stackoverflow.com/users/10374042/christian-fosli", icon = "stack-overflow" },
 ]
 
+stylesheets = [
+    "profilepic.css"
+]
+
 [extra.analytics]
 enabled = false
