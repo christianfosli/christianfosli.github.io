@@ -9,9 +9,10 @@ and configuring CI/CD pipelines using GitHub Actions or Azure (DevOps) Pipelines
 I have several years experience building cloud-based and containerized solutions for clients,
 and I have achieved several certifications related to Microsoft Azure and Kubernetes.
 
-I also do some programming outside of work, mostly to play with technology I find interesting, such as the rust programming language.
-I have quite a few hobby projects on my GitHub,
-and my favorite ones are also highlited [here](/projects). I'm also a Linux enthusiast and very comfortable in the terminal.
+I also do some programming outside of work, mostly to play with technology I find interesting,
+such as the rust programming language.
+I have quite a few hobby projects on my GitHub, and my favorite ones are also highlighted [here](/projects).
+I'm also a Linux enthusiast and very comfortable in the terminal.
 
 Outside of tech I like to bicycle, work out/lift weights, and spend time with my family and friends.
 I'm a husband and a dad to an amazing toddler.
