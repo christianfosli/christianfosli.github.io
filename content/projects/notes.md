@@ -1,7 +1,7 @@
 +++
 title = "Notes"
 description = "Visualizing my personal (and non-confidential) notes using rust mdbook"
-weight = 4
+weight = 5
 +++
 
 I'm keeping some of my personal (but non-confidential, of course 😃) notes here.
