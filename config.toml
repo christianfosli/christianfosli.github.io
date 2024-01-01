@@ -31,7 +31,8 @@ socials = [
 ]
 
 stylesheets = [
-    "profilepic.css"
+    "profilepic.css",
+    "figures.css"
 ]
 
 [extra.analytics]

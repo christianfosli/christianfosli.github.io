@@ -3,9 +3,16 @@ title = "Visualisere telemetridata fra .NET mikrotjenester med OpenTelemetry, El
 date = "2022-10-24"
 +++
 
-# Visualisere telemetridata fra .NET mikrotjenester med OpenTelemetry, ElasticSearch, Kibana
+<div class="fig-container">
+<figure>
+  <img src="https://source.unsplash.com/uAFjFsMS3YY" alt="person using magnifying class enlarging the appearance of his nose and sunglasses" width="640"/>
+  <figcaption>
+  <p>Photo by <a href="https://unsplash.com/@laughayette?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Marten Newhall</a> on <a href="https://unsplash.com/photos/person-using-magnifying-glass-enlarging-the-appearance-of-his-nose-and-sunglasses-uAFjFsMS3YY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a><p/>
+  </figcaption>
+</figure>
+</div>
 
-> Note: I originally wrote this blog post [on medium](https://medium.com/@cfosli/visualisere-telemetridata-fra-net-mikrotjenester-med-opentelemetry-elasticsearch-kibana-c4121c8b68e4)
+> Note: I originally wrote this blog post [on medium](https://medium.com/@cfosli/visualisere-telemetridata-fra-net-mikrotjenester-med-opentelemetry-elasticsearch-kibana-c4121c8b68e4).
 > It is written in norwegian because it was meant for a community blog with mostly norwegian readers
 
 I prosjektet jeg arbeider med for tiden har vi flere mikrotjenester skrevet i .NET. Vi ønsket å få bedre innsikt i ytelse til mikrotjenestene og deres endepunkt, helst uten å bruke plattform spesifikke løsninger hos en spesifikk skyleverandør.
@@ -15,12 +22,12 @@ I denne guiden vil vi kjøre både .NET-mikrotjenestene og elastic tjenestene i
 Hvordan man kjører mikrotjenestene (om man bruker kubernetes, en PaaS løsning hos en skyleverandør, eller en "tradisjonell" VM) har lite å si med tanke på OpenTelemetry.
 Det som er viktig er at mikrotjenestene kan nå endepunktet som telemetridataen skal eksporteres til.
 
-## Forutsetninger
+# Forutsetninger
 
 Guiden tar utgangspunkt i at man har Docker Desktop installert, og har slått på Kubernetes funksjonaliteten der.
 Git, helm, curl, jq og .NET 6 SDK er også fint å ha, i tillegg til en konsoll/terminal med bash eller tilsvarende.
 
-## Utgangspunkt
+# Utgangspunkt
 
 Før vi kan sette igang med OpenTelemetry trenger vi noe å monitorere.
 Jeg har tatt utgangspunkt i 2 enkle mikrotjenester for å jobbe med "TODO's".
@@ -64,9 +71,9 @@ kubectl get svc
 
 Åpne http://localhost:30008/swagger eller http://localhost:30009/swagger i nettleseren din for å teste API'ene med Swagger UI. Opprett gjerne en TodoList og ett par ToDo's.
 
-[Bilde (flyttes til inline picture)](https://cdn-images-1.medium.com/v2/resize:fit:800/1*MnhcrX3B44Px3Q8_Ch9rhw.png)
+![Web browser with swagger definitions for Todo Item Service](todo-item-svc-swagger.png)
 
-## Steg 1- Kjøre ElasticSearch, Kibana og APM i Kubernetes
+# Steg 1- Kjøre ElasticSearch, Kibana og APM i Kubernetes
 
 > ⚠️ Note: Hvis du skippet "Utgangspunkt" seksjonen kan det være lurt å sjekke hvilket kubernetes cluster du er koblet til før du fortsetter.
 > Sjekk `kubectl config current-context`.
@@ -194,7 +201,7 @@ kubectl get secret elasticsearch-es-elastic-user -o json \
 
 Nå har vi infrastrukturen på plass i vårt lokale kubernetes cluster. Vi er klar for å monitorere tjenestene våre!
 
-## Steg 2- Oppdatere mikrotjenestene til å generere telemetridata og eksportere til elastic APM
+# Steg 2 - Oppdatere mikrotjenestene til å generere telemetridata og eksportere til elastic APM
 
 Først må vi installere relevante OpenTelemetry NuGet bibliotek. Åpne TodoListService mappen i en terminal og skriv følgende kommandoer.
 
@@ -284,7 +291,7 @@ kubectl apply -f deploy.yaml
 
 Repeter samme steg for TodoItemService.
 
-## Test og resultat
+# Test og resultat
 
 Gjør ett par requests via Swagger UI på http://localhost:30008/swagger og http://localhost:30009/swagger.
 
@@ -296,7 +303,7 @@ Under traces kan vi gå videre inn på hver enkelt request. Timeline viser oss a
 
 [Bilde (flyttes til inline)](https://miro.medium.com/v2/resize:fit:720/format:webp/1*cEO5SeRRvnZqCIbNxztXOw.png)
 
-## Oppryddning
+# Oppryddning
 
 For å slette det vi har laget her fra ditt lokale kubernetes cluster
 
@@ -311,7 +318,7 @@ Eller hvis du ikke har noe annet du vil ta vare på i ditt lokale kubernetes clu
 
 [Bilde (flyttes til inline)](https://miro.medium.com/v2/resize:fit:720/format:webp/1*Abe9vlmUPI_YF07vNb9rCA.png)
 
-## Kilder
+# Kilder
 
 * [https://opentelemetry.io/docs/instrumentation/net/](https://opentelemetry.io/docs/instrumentation/net/)
 
