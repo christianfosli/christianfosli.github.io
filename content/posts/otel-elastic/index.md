@@ -39,7 +39,7 @@ TodoListService lar oss opprette og hente ut TODO-lister, mens TodoItemService l
 Jeg tok også med en kubernetes deployment for å kjøre en MS SQL Server database.
 En slik deployment fungerer fint for å teste monitorering av databasekall, men er absolutt ikke klar for produksjonbruk!
 
-[Diagram (flyttes til inline picture)](https://cdn-images-1.medium.com/v2/resize:fit:800/1*vY-pZjqbr8dl7k0P4ZG3yg.png)
+![Architecture diagram](services-diag.png)
 
 Hent ned startkoden på GitHub:
 
