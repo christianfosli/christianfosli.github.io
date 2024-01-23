@@ -5,7 +5,7 @@ weight = 5
 +++
 
 Rust-based service to change color theme in my terminal emulator and editor whenever the system color scheme changes.
-I'll write blog post about this soon.
+See the [blog post](/posts/on-colorscheme-changed/) for more details.
 
 ### Links
 
