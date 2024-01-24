@@ -1,6 +1,6 @@
 +++
 title = "\"On-colorscheme-changed\" with rust and zbus"
-date = "2024-01-24"
+date = "2024-01-23"
 +++
 
 My favorite terminal emulator at the time is [Alacritty](https://alacritty.org).
@@ -9,7 +9,7 @@ One feature I wish it had but it doesn't is having the ability to quickly toggle
 
 I usually want everything in dark mode, but occasionaly I get to do some programming outside in the sun in the summer,
 or I'll do a demo in a meeting room with a not-that-bright projector, and then light mode makes the screen much easier to see.
-I use Fedora Linux on my laptop, and Gnome supports switching between dark and light mode with 1 click in the menu bar:
+I use Fedora Workstation on my laptop, and Gnome supports switching between dark and light mode with 1 click in the menu bar:
 
 ![Toggle dark and light mode in Gnome menu bar](gnome_dark_mode.png)
 
@@ -75,7 +75,7 @@ trait Settings {
 After some Googling I found a recommendation to install [D-Spy](https://flathub.org/apps/org.gnome.dspy) to explore D-Bus connections and figure out the details about which message we should listen for.
 I also found some info about which message to listen for, but not quite enough details to fill out the missing data in the above snippet.
 
-In D-SPy we find the relevant methods for us, under "org.freedesktop.portal.Desktop", in the "org.freedesktop.portal.Settings" interface:
+In D-Spy we find the relevant methods for us, under "org.freedesktop.portal.Desktop", in the "org.freedesktop.portal.Settings" interface:
 
 ![dspy shows us the relevant methods](dspy.png)
 
@@ -100,7 +100,7 @@ trait Settings {
 ```
 
 and after looking through [writing a client proxy](https://dbus2.github.io/zbus/client.html) a few more times,
-we're able to replace our "hello-world" with listing to the correct message (full main.rs at this point in time):
+we're able to replace our "hello-world" with listening to the correct message (full main.rs at this point in time):
 
 ```rust
 use futures_util::stream::StreamExt;
@@ -175,6 +175,8 @@ cargo add dirs
    I'll do this with a "find-and-replace" in my helix config file:
 
    ```rust
+    let mut from_fname = dirs::config_dir().unwrap();
+    let mut to_fname = 
     let (from, to) = if cs == ColorScheme::Light {
         ("catppuccin_mocha", "catppuccin_latte")
     } else {
