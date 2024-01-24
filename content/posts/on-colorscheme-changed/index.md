@@ -129,7 +129,7 @@ enum ColorScheme {
 async fn main() -> Result<(), Box<dyn Error>> {
     let conn = Connection::session().await?;
     let settings = SettingsProxy::new(&conn).await?;
-    let mut settings_changed = settings
+    let mut colorscheme_changing = settings
         .receive_setting_changed_with_args(&[
             (0, "org.freedesktop.appearance"),
             (1, "color-scheme"),
@@ -138,8 +138,8 @@ async fn main() -> Result<(), Box<dyn Error>> {
 
     println!("Connected to dbus! Waiting for changes...");
 
-    while let Some(setting) = settings_changed.next().await {
-        if let Ok(args) = setting.args() {
+    while let Some(signal) = colorscheme_changing.next().await {
+        if let Ok(args) = signal.args() {
             let val = TryInto::<u32>::try_into(args.value)?;
             match val {
                 0 => on_colorscheme_changed(ColorScheme::Light).await?,
@@ -147,7 +147,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
                 _ => panic!("Unexpected value"),
             };
         } else {
-            eprintln!("{:?}", setting.args());
+            eprintln!("{:?}", signal.args());
         }
     }
 
@@ -175,8 +175,6 @@ cargo add dirs
    I'll do this with a "find-and-replace" in my helix config file:
 
    ```rust
-    let mut from_fname = dirs::config_dir().unwrap();
-    let mut to_fname = 
     let (from, to) = if cs == ColorScheme::Light {
         ("catppuccin_mocha", "catppuccin_latte")
     } else {
@@ -201,6 +199,8 @@ cargo add dirs
    We'll make our rust service swap these to alacritty.toml and alacritty.dark.toml when switching to light mode (and vice versa):
 
   ```rust
+    let mut from_fname = dirs::config_dir().unwrap();
+    let mut to_fname = dirs::config_dir().unwrap();
     if cs == ColorScheme::Light {
         from_fname.push("alacritty/alacritty.light.toml");
         to_fname.push("alacritty/alacritty.dark.toml");
