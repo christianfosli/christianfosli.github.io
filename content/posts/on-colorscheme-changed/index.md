@@ -3,7 +3,7 @@ title = "\"On-colorscheme-changed\" with rust and zbus"
 date = "2024-01-23"
 +++
 
-My favorite terminal emulator at the time is [Alacritty](https://alacritty.org).
+My favorite terminal emulator at the moment is [Alacritty](https://alacritty.org).
 It's a super-performant minimalistic terminal written in rust.
 One feature I wish it had but it doesn't is having the ability to quickly toggle between light and dark theme.
 
@@ -162,7 +162,7 @@ async fn on_colorscheme_changed(cs: ColorScheme) -> Result<(), Box<dyn Error>> {
 
 # Updating color themes
 
-Now we just need to implement the `on_colorscheme_changed` to do what we want.
+Now we just need to implement the `on_colorscheme_changed` function to do what we want.
 This is of course a personal preference, but I'll do two things: change theme for helix editor and alacritty terminal.
 
 Let's first add the [dirs crate](https://crates.io/crates/dirs), which makes it easier to find the correct config files to update:
@@ -171,7 +171,7 @@ Let's first add the [dirs crate](https://crates.io/crates/dirs), which makes it 
 cargo add dirs
 ```
 
-1. Change theme for [helix editor](https://helix-editor.com/) from "catppucin_mocha" to "catpuccin_latte".
+1. Change theme for [helix editor](https://helix-editor.com/) from "catppucin_mocha" to "catppuccin_latte".
    I'll do this with a "find-and-replace" in my helix config file:
 
    ```rust
