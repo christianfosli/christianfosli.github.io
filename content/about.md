@@ -5,7 +5,7 @@ path = "about"
 
 ![Christian Fosli profile](/me-2023-09.png)
 
-I'm a senior software engineer from Stavanger, Norway.
+I'm a senior software engineer at [Webstep](https://www.webstep.no/) in Stavanger, Norway.
 My main areas of expertise are backend dotnet development, infrastructure-as-code,
 and configuring CI/CD pipelines using GitHub Actions or Azure (DevOps) Pipelines.
 I have several years experience building cloud-based and containerized solutions for clients,
