@@ -31,7 +31,6 @@ socials = [
     { name = "linkedin", url = "https://www.linkedin.com/in/christianfosli", icon = "linkedin" },
     { name = "mastodon", url = "https://toot.community/@christianfosli", icon = "mastodon" },
     { name = "matrix", url = "https://matrix.to/#/@christianfosli:matrix.org", icon = "matrix" },
-    { name = "stack-overflow", url = "https://stackoverflow.com/users/10374042/christian-fosli", icon = "stack-overflow" },
 ]
 
 stylesheets = [
