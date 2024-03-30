@@ -2,6 +2,9 @@
 title = "Quick and easy data web apps in Python with Streamlit"
 date = "2024-04-01"
 draft = true
+
+[taxonomies]
+tags=["python"]
 +++
 
 I recently switched jobs (from one IT consultancy to another, smaller one).

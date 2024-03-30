@@ -1,6 +1,9 @@
 +++
 title = "\"On-colorscheme-changed\" with rust and zbus"
 date = "2024-01-23"
+
+[taxonomies]
+tags=["rust", "linux"]
 +++
 
 My favorite terminal emulator at the moment is [Alacritty](https://alacritty.org).

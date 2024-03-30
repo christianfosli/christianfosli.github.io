@@ -1,6 +1,9 @@
 +++
 title = "Visualisere telemetridata fra .NET mikrotjenester med OpenTelemetry, ElasticSearch, Kibana"
 date = "2022-10-24"
+
+[taxonomies]
+tags=["dotnet", "elastic"]
 +++
 
 <div class="fig-container">
