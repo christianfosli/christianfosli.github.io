@@ -4,5 +4,10 @@ services:
       context:  .
       args:
         BASE_URL: "http://localhost:8000"
+        DRAFTS: "1"
+    develop:
+      watch:
+        - path: .
+          action: rebuild
     ports:
       - "8000:80"
