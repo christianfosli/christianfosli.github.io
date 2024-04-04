@@ -1,6 +1,6 @@
 +++
 title = "Quick and easy data web apps in Python with Streamlit"
-date = "2024-04-01"
+date = "2024-04-08"
 draft = true
 
 [extra]
@@ -10,7 +10,7 @@ comment = true
 tags=["python"]
 +++
 
-I recently switched jobs (from one IT consultancy to another, smaller one).
+I pretty recently switched jobs (from one IT consultancy to another).
 This also meant switching client project, and subsequently I would be working with another tech stack than what I had been using the last few years.
 I was going from microservices in csharp/.NET to "data apps" with Python, Pandas and Streamlit.
 
@@ -48,7 +48,26 @@ pip install -r requirements.txt
 
 ### Create initial Streamlit app
 
-TODO
+Create a file application.py with the following content:
+
+```python
+import streamlit as st
+
+st.title("Streamlit demo")
+```
+
+Run with
+
+```bash
+streamlit run application.py
+```
+
+This should open up the app in your default web browser:
+
+![initial streamlit app in web browser](initial_streamlit_browser.png)
+
+That's the "Hello world" of Streamlit applications.
+Now we're ready to explore some more features 😄.
 
 ### Dataframes
 
