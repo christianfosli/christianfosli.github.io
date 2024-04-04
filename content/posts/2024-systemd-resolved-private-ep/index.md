@@ -9,7 +9,7 @@ comment = true
 tags=["linux"]
 +++
 
-Today I had an issue related to Azure Private Endpoints and DNS on my laptop when connected to a company office network.
+Yesterday I had an issue related to Azure Private Endpoints and DNS on my laptop when connected to a company office network.
 I think I found a nice work around, so I thought I'd write a blog post about it.
 It's only applicable to Linux systems using systemd-resolved for DNS resolution (e.g. most Ubuntu and Fedora installations).
 
@@ -27,7 +27,11 @@ and the default DNS server on this network has been configured such that the blo
 (*.blob.core.windows.net) gets resolved to the private endpoint's private IP address.
 _However_ some kind of network security is blocking my connection to this private IP address.
 
-I verify this using `dig +short {storageaccountname}.blob.core.windows.net`.
+I verify this using dig:
+
+```bash
+dig +short {storageaccountname}.blob.core.windows.net
+```
 
 ### Potential solutions and work-arounds
 
@@ -42,7 +46,7 @@ I'd like to specify a custom DNS server instead, but just for Azure Blob Storage
 
 Queue systemd-resolved
 
-#### Specific DNS servers for specific domain names with systemd-resolved
+#### My solution: Configure specific DNS servers for specific domain names with systemd-resolved
 
 Systemd-resolved is configured either by modifying the /etc/systemd/resolved.conf configuration file,
 or by creating "drop-ins" in the /etc/systemd/resolved.conf.d directory.

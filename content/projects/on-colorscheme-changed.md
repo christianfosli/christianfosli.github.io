@@ -8,7 +8,7 @@ comment = true
 +++
 
 Rust-based service to change color theme in my terminal emulator and editor whenever the system color scheme changes.
-See the [blog post](/posts/on-colorscheme-changed/) for more details.
+See the [blog post](/posts/2024-on-colorscheme-changed/) for more details.
 
 ### Links
 
