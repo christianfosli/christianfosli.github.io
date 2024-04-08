@@ -25,7 +25,7 @@ On this website I will mostly post tech-related content, usually in English but 
 
 ### Contact info
 
-You can find my contact info and my profile on various online platforms in the header.
+You can find my contact info and my profile on various online platforms next to my name in the header.
 
 ---
 

@@ -138,6 +138,6 @@ We could also use pandas to transform our dataframe in different ways prior to p
 
 ### More
 
-This was just the tip of the iceberg with regards to data apps on Streamlit.
+This was just the tip of the iceberg with regards to data web apps on Streamlit.
 Hopefully it was useful and/or inspires you to try it out and learn more 😄.
 
