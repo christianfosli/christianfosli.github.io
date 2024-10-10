@@ -17,7 +17,7 @@ I have quite a few hobby projects on my GitHub, and my favorite ones are also hi
 I'm also a Linux enthusiast and very comfortable in the terminal.
 
 Outside of tech I like to bicycle, work out/lift weights, and spend time with my family and friends.
-I'm a husband and a dad to an amazing toddler.
+I'm a husband and a dad to two amazing boys.
 
 On this website I will mostly post tech-related content, usually in English but sometimes in Norwegian.
 
