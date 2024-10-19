@@ -3,7 +3,7 @@ title = "About Christian Fosli"
 path = "about"
 +++
 
-![Christian Fosli profile](/me-2023-09.png)
+![Christian Fosli speaking at conference](/hellosvg24_pic.jpg)
 
 I'm a senior software engineer at [Webstep](https://www.webstep.no/christian-fosli/) in Stavanger, Norway.
 My main areas of expertise are backend/fullstack web development, infrastructure-as-code,

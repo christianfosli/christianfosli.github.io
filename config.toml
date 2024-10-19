@@ -2,7 +2,7 @@
 base_url = "https://www.christianfosli.com"
 title = "Christian Fosli"
 build_search_index = true
-generate_feed = true
+generate_feeds = true
 compile_sass = true
 taxonomies = [{ name = "tags" }]
 
