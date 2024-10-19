@@ -2,9 +2,6 @@
 title = "\"On-colorscheme-changed\" with rust and zbus"
 date = "2024-01-23"
 
-[extra]
-comment = true
-
 [taxonomies]
 tags=["rust", "linux"]
 +++

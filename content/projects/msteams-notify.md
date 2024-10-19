@@ -2,9 +2,6 @@
 title = "MS Teams notify"
 description = "Rust-based console app to work-around easy-to-miss notifications from MS Teams PWA on Linux"
 weight = 4
-
-[extra]
-comment = true
 +++
 
 ### Problem

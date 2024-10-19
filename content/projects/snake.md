@@ -5,7 +5,6 @@ weight = 1
 
 [extra]
 local_image = "/projects/snake.png"
-comment = true
 +++
 
 The classic snake game, similar to the one found on Nokia phones in the 90's.

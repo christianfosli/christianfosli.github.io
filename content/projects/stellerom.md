@@ -2,9 +2,6 @@
 title = "Stellerom"
 description = "Work-in-Progress web app for finding and rating changing rooms near you"
 weight = 2
-
-[extra]
-comment = true
 +++
 
 Work-in-Progress web app for finding and rating changing rooms near you.
