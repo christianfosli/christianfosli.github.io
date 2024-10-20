@@ -15,7 +15,7 @@ highlight_theme = "ayu-dark"
 [extra]
 use_cdn = false
 theme = "toggle"
-comment = true
+comment = false
 
 menu = [
     { name = "/posts", url = "/posts", weight = 1 },

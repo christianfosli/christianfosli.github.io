@@ -2,6 +2,9 @@
 title = "Specific DNS servers for specific domain names with systemd-resolved"
 date = "2024-04-04"
 
+[extra]
+comment = true
+
 [taxonomies]
 tags=["linux"]
 +++

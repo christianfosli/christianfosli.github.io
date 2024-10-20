@@ -2,6 +2,9 @@
 title = "new-uuid.com"
 description = "Simple web api to generate uuid's"
 weight = 3
+
+[extra]
+comment = true
 +++
 
 Simple web api to generate random uuid's,
