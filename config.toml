@@ -28,7 +28,7 @@ socials = [
     { name = "email", url = "mailto:cfosli@gmail.com", icon = "email" },
     { name = "email", url = "mailto:christian.fosli@webstep.no", icon = "email" },
     { name = "github", url = "https://github.com/christianfosli", icon = "github" },
-    { name = "gitlab", url = "https://gitlab.com/christianfosli", icon = "gitlab" },
+    { name = "codeberg", url = "https://codeberg.org/christianfosli", icon = "code" },
     { name = "bluesky", url = "https://bsky.app/profile/christianfosli.com", icon = "bluesky" },
     { name = "linkedin", url = "https://www.linkedin.com/in/christianfosli", icon = "linkedin" },
     { name = "matrix", url = "https://matrix.to/#/@christianfosli:matrix.org", icon = "matrix" },
