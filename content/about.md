@@ -13,7 +13,7 @@ and I have achieved several certifications related to Microsoft Azure and Kubern
 
 I also do some programming outside of work, mostly to play with technology I find interesting,
 such as the rust programming language.
-I have quite a few hobby projects on my GitHub, and my favorite ones are also highlighted [here](/projects).
+Some of my favorite hobby projects are highlighted [here](/projects).
 I'm also a Linux enthusiast and very comfortable in the terminal.
 
 Outside of tech I like to bicycle, work out/lift weights, and spend time with my family and friends.
