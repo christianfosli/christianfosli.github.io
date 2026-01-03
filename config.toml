@@ -31,6 +31,7 @@ socials = [
     { name = "github", url = "https://github.com/christianfosli", icon = "github" },
     { name = "bluesky", url = "https://bsky.app/profile/christianfosli.com", icon = "bluesky" },
     { name = "linkedin", url = "https://www.linkedin.com/in/christianfosli", icon = "linkedin" },
+    { name = "the-story-graph", url = "https://app.thestorygraph.com/profile/christianfosli", icon = "the-story-graph" },
 ]
 
 stylesheets = [
