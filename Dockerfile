@@ -1,4 +1,4 @@
-FROM ghcr.io/getzola/zola:v0.19.0 AS zola
+FROM ghcr.io/getzola/zola:v0.21.0 AS zola
 ARG BASE_URL="https://www.christianfosli.com"
 ARG DRAFTS="0"
 
