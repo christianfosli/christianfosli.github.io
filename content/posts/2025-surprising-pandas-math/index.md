@@ -9,6 +9,12 @@ comment = true
 tags=["python"]
 +++
 
+> Note: The below example has been fixed after I wrote this, in Pandas 3, released in Jan 2026.
+> So if you are lucky to use a recent version of Pandas then this might not be applicable.
+>
+> See the [Pandas 3.0 release notes](https://pandas.pydata.org/pandas-docs/stable/whatsnew/v3.0.0.html#datetime-timedelta-resolution-inference)
+> for more information.
+
 In my current client project I'm working a lot with time series data in pandas.
 Several nordic power markets recently changed from hourly to 15min delivery resolution,
 which required me to resample pandas dataframes between the two resolutions and do some related datetime math in various situations.
